@@ -1,6 +1,30 @@
 import { linksMain, linksOnline, linksPro } from "./links.js";
 
-const linkDiv = document.getElementById("links")
+let links = ""
+
+const currentUrl = new URL(window.location)
+const display = currentUrl.searchParams.get("display")
+
+let profileDiv = document.getElementById("profile")
+let nameDiv = document.getElementById("name")
+let aboutDiv = document.getElementById("about")
+
+function writeDiv(image, name, about) {
+    profileDiv.innerHTML = `<img class="thumbnail" src="${image}" alt="thumbnail">`
+    nameDiv.innerHTML = `<div>${name}</div>`
+    aboutDiv.innerHTML = `<div>${about}</div>`
+}
+
+if (display == "pro") {
+    writeDiv("", "", "test")
+    links = linksMain.concat(linksPro)
+
+} else {
+    writeDiv("./assets/Dizzy Fuzzy.png", "Ant", "test")
+    links = linksMain.concat(linksOnline)
+}
+
+const linksDiv = document.getElementById("links")
 
 function addLink(id, name, link, icon) {
     return `
@@ -12,7 +36,6 @@ function addLink(id, name, link, icon) {
 }
 
 let addLinks = ""
-let links = linksMain.concat(linksOnline)
 
 links.forEach((l) => {
     let id = l.id
@@ -23,4 +46,4 @@ links.forEach((l) => {
     addLinks += addLink(id, name, link, icon)
 })
 
-linkDiv.innerHTML = addLinks
+linksDiv.innerHTML = addLinks

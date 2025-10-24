@@ -23,7 +23,7 @@ a {
     font-weight: 600;
 }
 
-.profile {
+.thumbnail {
     position: relative;
     height: 100%;
     width: 100%;
@@ -31,7 +31,7 @@ a {
     margin-top: 8%;
 }
 
-.profileDiv {
+.profile {
     margin: 1rem 0;
     position: relative;
     height: 225px;
@@ -58,14 +58,14 @@ a {
     border-radius: 15px;
 }
 
-.title {
+.name {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
     color: #FFFFFF;
 }
 
-.description {
+.about {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 2rem;
