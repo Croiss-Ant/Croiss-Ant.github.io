@@ -7,12 +7,8 @@ function addLink(id, name, link, icon) {
     <a href="${link}" class="link ${id}" target="blank">
         <i class="${icon}"></i>
         <span>${name} </span>
-        <i class="fa-solid fa-paperclip" onclick="copyLink(${link})"></i>
+        <i class="${icon}"></i>
     </a>`
-}
-
-function copyLink(link) {
-    navigator.clipboard.writeText(link)
 }
 
 let addLinks = ""
