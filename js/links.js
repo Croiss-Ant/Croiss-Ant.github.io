@@ -1,40 +1,52 @@
 export const linksMain = [
     {
+        id: "youtube",
         name: "YouTube",
         link: "https://www.youtube.com/@Croiss-Ant",
-        image: "fa-brands fa-youtube"
+        icon: "fa-brands fa-youtube"
     }, {
+        id: "github",
         name: "Github",
         link: "https://www.youtube.https://github.com/Croiss-Ant/@Croiss-Ant",
-        image: "fa-brands fa-github"
+        icon: "fa-brands fa-github"
     }
 ]
 
 export const linksOnline = [
     {
+        id: "steam",
         name: "Steam",
         link: "https://steamcommunity.com/id/croiss-ant",
-        image: "fa-brands fa-steam",
+        icon: "fa-brands fa-steam",
     }, {
+        id: "discord",
         name: "Discord",
         link: "",
-        image: "fa-brands fa-discord",
+        icon: "fa-brands fa-discord",
     }, {
+        id: "deviantart",
         name: "DeviantArt (Archive)",
         link: "https://www.deviantart.com/french-ant",
-        image: "fa-brands fa-deviantart",
+        icon: "fa-brands fa-deviantart",
+    }, {
+        id: "mail",
+        name: "Contact me",
+        link: "mailto:contact.theant@gmail.com",
+        icon: "fa-solid fa-envelope"
     }
 ]
 
 export const linksPro = [
     {
+        id: "linkedin",
         name: "Linkedin",
         link: "https://www.linkedin.com/in/bellionantoine/",
-        image: "fa-brands fa-linkedin",
+        icon: "fa-brands fa-linkedin",
     }, {
+        id: "mail",
         name: "Mail",
         link: "mailto:antoinebellion79@gmail.com",
-        image: "fa-solid fa-envelope"
+        icon: "fa-solid fa-envelope"
     }
 ]
 
