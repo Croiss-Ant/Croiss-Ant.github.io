@@ -10,17 +10,31 @@ export var linksMain = [
     }
 ]
 
+export var linksOnline = [
+    {
+        name: "Steam",
+        link: "https://steamcommunity.com/id/croiss-ant",
+        image: "fa-brands fa-steam",
+    }, {
+        name: "Discord",
+        link: "",
+        image: "fa-brands fa-discord",
+    }, {
+        name: "DeviantArt (Archive)",
+        link: "https://www.deviantart.com/french-ant",
+        image: "fa-brands fa-deviantart",
+    }
+]
+
 export const linksPro = [
     {
         name: "Linkedin",
         link: "https://www.linkedin.com/in/bellionantoine/",
         image: "fa-brands fa-linkedin",
-        color: "#0A66C2"
-    },
-    {
+    }, {
         name: "Mail",
         link: "mailto:antoinebellion79@gmail.com",
-        image: "fa-brands fa-font-awesome"
+        image: "fa-solid fa-envelope"
     }
 ]
 

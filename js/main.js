@@ -1,11 +1,11 @@
-import { linksMain, linksPro } from "./links.js";
+import { linksMain, linksOnline, linksPro } from "./links.js";
 
-const linkDiv = document.getElementById("links");
+const linkDiv = document.getElementById("links")
 
 function addLink(name, link, image, color) {
     if (!color) {
         return `
-        <a href="${link}" class="link ${name.toLowerCase()}" target="blank">
+        <a href="${link}" class="link ${name.split(" ")[0].toLowerCase()}" target="blank">
             <i class="${image}"></i>
             <span>${name} </span>
             <i class="fa-solid fa-paperclip" onclick="copyLink(${link})"></i>
@@ -23,15 +23,16 @@ function copyLink(link) {
     navigator.clipboard.writeText(link)
 }
 
-let allLinks = "";
+let addLinks = ""
+let links = linksMain.concat(linksOnline)
 
-linksMain.forEach((l) => {
+links.forEach((l) => {
     let link = l.link
     let name = l.name
     let image = l.image
     let color = l.color
 
-    allLinks += addLink(name, link, image, color)
-});
+    addLinks += addLink(name, link, image, color)
+})
 
-linkDiv.innerHTML = allLinks;
+linkDiv.innerHTML = addLinks
