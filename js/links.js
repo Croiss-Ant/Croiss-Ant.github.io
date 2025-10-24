@@ -1,4 +1,4 @@
-export var linksMain = [
+export const linksMain = [
     {
         name: "YouTube",
         link: "https://www.youtube.com/@Croiss-Ant",
@@ -10,7 +10,7 @@ export var linksMain = [
     }
 ]
 
-export var linksOnline = [
+export const linksOnline = [
     {
         name: "Steam",
         link: "https://steamcommunity.com/id/croiss-ant",

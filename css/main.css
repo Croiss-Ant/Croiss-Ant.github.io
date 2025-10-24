@@ -88,12 +88,32 @@ a {
     aspect-ratio: 1;
 }
 
+.github {
+    background-color: #000000;
+}
+
 .youtube {
     background-color: #FF0000;
 }
 
-.github {
-    background-color: #000000;
+.steam {
+    background-color: #00ADEE;
+}
+
+.discord {
+    background-color: #5865F2;
+}
+
+.deviantart {
+    background-color: #05CC46;
+}
+
+.linkedin {
+    background-color: #0A66C2;
+}
+
+.mail {
+    background-color: #4285F4;
 }
 
 .link:hover {
