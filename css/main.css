@@ -19,7 +19,7 @@ main {
 
 a {
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -46,15 +46,15 @@ a {
 }
 
 .link {
-    height: 2.75rem;
+    height: 3rem;
     width: 600px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    color: #FFFFFF;
 
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
     border-radius: 15px;
 }
 
@@ -62,14 +62,14 @@ a {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: white;
+    color: #FFFFFF;
 }
 
 .description {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 2rem;
-    color: white;
+    color: #FFFFFF;
 }
 
 .link span {
@@ -78,7 +78,7 @@ a {
 }
 
 .link i {
-    height: 1.7rem;
+    height: 1.9rem;
     font-size: 150%;
     aspect-ratio: 1;
 }
