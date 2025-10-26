@@ -20,7 +20,7 @@ export const linksOnline = [
         icon: "fa-brands fa-steam",
     }, {
         id: "discord",
-        name: "Discord",
+        name: "Discord (@croiss_ant)",
         link: "",
         icon: "fa-brands fa-discord",
     }, {

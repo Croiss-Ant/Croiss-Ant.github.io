@@ -102,6 +102,7 @@ a {
 
 .discord {
     background-color: #5865F2;
+    pointer-events: none;
 }
 
 .deviantart {

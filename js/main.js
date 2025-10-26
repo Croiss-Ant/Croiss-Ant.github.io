@@ -16,11 +16,11 @@ function writeDiv(image, name, about) {
 }
 
 if (display == "pro") {
-    writeDiv("", "", "test")
+    writeDiv("https://image2url.com/images/1761484200064-2c3e6b91-e9d1-4630-b801-9e43cc4ca326.jpg", "", "test")
     links = linksMain.concat(linksPro)
 
 } else {
-    writeDiv("./assets/Dizzy Fuzzy.png", "Ant", "test")
+    writeDiv("https://image2url.com/images/1761484172085-be4b7a67-34c0-4c2c-8c2d-98f752a84bb0.png", "Ant", "test")
     links = linksMain.concat(linksOnline)
 }
 
