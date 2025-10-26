@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    transition: all 0.3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #060c21;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #060c21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.thumbnail {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 8%;
+}
+
+.profile {
+    margin: 1rem 0;
+    position: relative;
+    height: 225px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    height: 3rem;
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    margin: 0.75rem 0;
+    border-radius: 15px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+}
+
+.about {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+}
+
+.link span {
+    width: 80%;
+    text-align: center;
+}
+
+.link i {
+    height: 1.9rem;
+    font-size: 150%;
+    aspect-ratio: 1;
+}
+
+.linkIcon {
+    height: 2rem !important;
+    aspect-ratio: 1;
+}
+
+.github {
+    background-color: #000000;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.steam {
+    background-color: #00ADEE;
+}
+
+.discord {
+    background-color: #5865F2;
+    pointer-events: none;
+}
+
+.deviantart {
+    background-color: #05CC46;
+}
+
+.linkedin {
+    background-color: #0A66C2;
+}
+
+.mail {
+    background-color: #4285F4;
+}
+
+.link:hover {
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
+    transform: scale(1.05);
+}
+
+.link>* {
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.link:hover>* {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: 100%;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .link span {
+        width: 70%;
+        text-align: center;
+    }
+
+    .link {
+        width: 95vw;
+    }
+
+    .link:hover {
+        transform: scale(1.01);
+    }
+}
+
+.footer {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
