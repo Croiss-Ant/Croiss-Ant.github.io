@@ -7,7 +7,7 @@ export const linksMain = [
     }, {
         id: "github",
         name: "Github",
-        link: "https://www.youtube.https://github.com/Croiss-Ant/@Croiss-Ant",
+        link: "https://github.com/Croiss-Ant",
         icon: "fa-brands fa-github"
     }
 ]
