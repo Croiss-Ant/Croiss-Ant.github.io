@@ -52,7 +52,7 @@ export const linksPro = [
 
 export const bioMain = {
     name: "L'Ant",
-    about: "Adult | He/Him | 🇫🇷 Fr*nch 🇫🇷 | Professional bug lover 🐛 | Likes to code and play games on my free time",
+    about: `Adult | 🇫🇷 Fr*nch 🇫🇷 | Professional bug lover <span class="bug" onclick="bug()">🐛</span> | Likes to code and play games on my free time`,
     image: "https://image2url.com/images/1761484172085-be4b7a67-34c0-4c2c-8c2d-98f752a84bb0.png",
     artistId: "@ArtLegionary",
     artLink: "https://x.com/ArtLegionary/status/1875405062874526207/photo/1"

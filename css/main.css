@@ -157,3 +157,7 @@ a {
         transform: scale(1.01);
     }
 }
+
+.bug {
+    cursor: pointer;
+}
