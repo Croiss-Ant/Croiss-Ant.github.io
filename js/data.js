@@ -52,7 +52,7 @@ export const linksPro = [
 
 export const bioMain = {
     name: "L'Ant",
-    about: `Adult | 🇫🇷 Fr*nch 🇫🇷 | Professional bug lover <span class="bug" onclick="bug()">🐛</span> | Likes to code and play games on my free time`,
+    about: `Adult | 🇫🇷 Fr*nch 🇫🇷 | Professional bug lover <span class="bug" onclick="bug()">🐛</span> | Likes to code and play games in my free time`,
     image: "https://image2url.com/images/1761484172085-be4b7a67-34c0-4c2c-8c2d-98f752a84bb0.png",
     artistId: "@ArtLegionary",
     artLink: "https://x.com/ArtLegionary/status/1875405062874526207/photo/1"
@@ -60,6 +60,6 @@ export const bioMain = {
 
 export const bioPro = {
     name: "Antoine Bellion",
-    about: `Étudiant en Master Informatique - Ingénierie Logicielle à <a class="about" href="https://www.univ-larochelle.fr/" target="blank">La Rochelle Université</a> | Passionné de développement, graphisme et game design`,
+    about: `Étudiant en Master Informatique - Ingénierie Logicielle à <a class="about" href="https://www.univ-larochelle.fr/" target="_blank">La Rochelle Université</a> | Passionné de développement, graphisme et game design`,
     image: "https://image2url.com/images/1761484200064-2c3e6b91-e9d1-4630-b801-9e43cc4ca326.jpg"
 }
