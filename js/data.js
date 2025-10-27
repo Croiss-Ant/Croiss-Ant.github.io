@@ -60,6 +60,6 @@ export const bioMain = {
 
 export const bioPro = {
     name: "Antoine Bellion",
-    about: "Étudiant en Master Informatique - Ingénierie Logicielle à La Rochelle Université | Passionné de développement, graphisme et game design",
+    about: `Étudiant en Master Informatique - Ingénierie Logicielle à <a class="about" href="https://www.univ-larochelle.fr/" target="blank">La Rochelle Université</a> | Passionné de développement, graphisme et game design`,
     image: "https://image2url.com/images/1761484200064-2c3e6b91-e9d1-4630-b801-9e43cc4ca326.jpg"
 }
