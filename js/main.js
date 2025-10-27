@@ -22,7 +22,7 @@ function writeDiv(image, name, about, artistId = null, artLink = null) {
     nameDiv.innerHTML = `<div>${name}</div>`
     aboutDiv.innerHTML = `<div>${about}</div>`
     if (artistId) {
-        profileDiv.innerHTML = `<a href="${artLink}" target="blank" title="Original art by ${artistId} | Click to check them out !"><img class="thumbnail" src="${image}" alt="thumbnail"></a>`
+        profileDiv.innerHTML = `<a href="${artLink}" target="_blank" title="Original art by ${artistId} | Click to check them out !"><img class="thumbnail" src="${image}" alt="thumbnail"></a>`
     } else {
         profileDiv.innerHTML = `<img class="thumbnail" src="${image}" alt="thumbnail">`
     }
@@ -31,7 +31,7 @@ function writeDiv(image, name, about, artistId = null, artLink = null) {
 /* ---- add a new link element ---- */
 function addLink(id, name, link, icon) {
     return `
-    <a href="${link}" class="link ${id}" target="blank">
+    <a href="${link}" class="link ${id}" target="_blank">
         <i class="${icon}"></i>
         <span>${name} </span>
         <i class="${icon}"></i>
