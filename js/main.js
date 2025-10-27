@@ -1,57 +1,34 @@
-import { linksMain, linksOnline, linksPro } from "./links.js";
+import { linksMain, linksOnline, linksPro, bioMain, bioPro } from "./data.js";
 
-// https://github.com/h-kuwayama/ghp-rewrite
-/*
-* Config
-*/
-let file_name = '';
-let parameter_key = 'display';
-    
-/*
-* Env
-*/
-let path_name = window.location.pathname;
-let query_string = window.location.search;
-let base_dir = path_name.split(file_name)[0];
-    
-/*
-* Process
-* (Rewrite URL using historyAPI)
-*/
-let parameter
-let parameter_value
-let match_condition = new RegExp(parameter_key + '=[a-z0-9-_]+$');
-if (parameter = query_string.match(match_condition)) {
-    parameter_value = parameter[0].split('=')[1];
-    history.replaceState(null, null, base_dir + file_name.replace('.html', '/') + parameter_value);
-}
-
+/* ---------- CONFIG ---------- */
+/* ---- link containers ---- */
 let links = ""
+let addLinks = ""
 
-//const currentUrl = new URL(window.location)
-//const display = currentUrl.searchParams.get("display")
+/* ---- http GET parameter ---- */
+const currentUrl = new URL(window.location)
+const display = currentUrl.searchParams.get("q")
 
-let profileDiv = document.getElementById("profile")
-let nameDiv = document.getElementById("name")
-let aboutDiv = document.getElementById("about")
-
-function writeDiv(image, name, about) {
-    profileDiv.innerHTML = `<img class="thumbnail" src="${image}" alt="thumbnail">`
-    nameDiv.innerHTML = `<div>${name}</div>`
-    aboutDiv.innerHTML = `<div>${about}</div>`
-}
-
-if (parameter_value == "pro") {
-    writeDiv("https://image2url.com/images/1761484200064-2c3e6b91-e9d1-4630-b801-9e43cc4ca326.jpg", "Antoine Bellion", "")
-    links = linksMain.concat(linksPro)
-
-} else {
-    writeDiv("https://image2url.com/images/1761484172085-be4b7a67-34c0-4c2c-8c2d-98f752a84bb0.png", "Ant", "")
-    links = linksMain.concat(linksOnline)
-}
-
+/* -- html elements -- */
+const favicon = document.querySelector(`link[rel~="icon"]`)
+const profileDiv = document.getElementById("profile")
+const nameDiv = document.getElementById("name")
+const aboutDiv = document.getElementById("about")
 const linksDiv = document.getElementById("links")
 
+/* ---------- FUNCTIONS ---------- */
+/* ---- rewrite bio elements ---- */
+function writeDiv(image, name, about, artistId = null, artLink = null) {
+    nameDiv.innerHTML = `<div>${name}</div>`
+    aboutDiv.innerHTML = `<div>${about}</div>`
+    if (artistId) {
+        profileDiv.innerHTML = `<a href="${artLink}" target="blank" title="Original art by ${artistId} | Click to check them out !"><img class="thumbnail" src="${image}" alt="thumbnail"></a>`
+    } else {
+        profileDiv.innerHTML = `<img class="thumbnail" src="${image}" alt="thumbnail">`
+    }
+}
+
+/* ---- add a new link element ---- */
 function addLink(id, name, link, icon) {
     return `
     <a href="${link}" class="link ${id}" target="blank">
@@ -61,8 +38,22 @@ function addLink(id, name, link, icon) {
     </a>`
 }
 
-let addLinks = ""
+/* ---------- MAIN ---------- */
+/* ---- dynamically update page content ---- */
+if (display == "pro") {
+    document.title = `${bioPro.name} | Liens utiles`
+    favicon.href = bioPro.image
+    writeDiv(bioPro.image, bioPro.name, bioPro.about)
+    links = linksMain.concat(linksPro)
 
+} else {
+    writeDiv(bioMain.image, bioMain.name, bioMain.about, bioMain.artistId, bioMain.artLink)
+    links = linksMain.concat(linksOnline)
+    document.title = `${bioMain.name} | Links`
+    favicon.href = bioMain.image
+}
+
+/* ---- dynamically create all the necessary links.. ---- */
 links.forEach((l) => {
     let id = l.id
     let link = l.link
@@ -72,4 +63,5 @@ links.forEach((l) => {
     addLinks += addLink(id, name, link, icon)
 })
 
+/* ---- ..and inject them into the page ---- */
 linksDiv.innerHTML = addLinks
