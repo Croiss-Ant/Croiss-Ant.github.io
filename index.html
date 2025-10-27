@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- //// COMMENT THIS LINE WHEN TESTING LOCALLY //// -->
     <script src="https://kit.fontawesome.com/5501d5eca4.js" crossorigin="anonymous"></script>
 
     <title>Index</title>
-
     <link rel="icon" href=""/>
+
     <link rel="stylesheet" href="./css/main.css"/>
     <script type="module" defer src="./js/main.js"></script>
 
@@ -15,6 +16,7 @@
 
 <body>
     <main>
+        <!-- // bio elements // -->
         <div class="profile" id="profile">
 
         </div>
@@ -24,11 +26,14 @@
         <div class="about" id="about">
 
         </div>
+        <!-- // links // -->
         <div class="links" id="links">
 
         </div>
+        <!-- // audio easter egg, shhhhhh :3 // -->
         <audio id="audio" src="./assets/bug.mp3"></audio>
         <script type="text/javascript">
+            /* -- play a sound when a secret element is clicked -- */
             function bug() {
                 let audio = document.getElementById("audio")
                 audio.play()
