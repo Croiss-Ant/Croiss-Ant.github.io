@@ -11,7 +11,7 @@ body {
     padding-bottom: 5rem;
 }
 
-main {
+#wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,6 +173,21 @@ a {
     }
 }
 
-.bug {
+#bug {
     cursor: pointer;
+}
+
+#popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+#popup.inactive {
+    display: none;
+}
+
+#wrapper.inactive {
+    filter: blur(5px);
 }
