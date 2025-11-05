@@ -189,5 +189,6 @@ a {
 }
 
 #wrapper.inactive {
+    pointer-events: none;
     filter: blur(5px);
 }
