@@ -11,34 +11,47 @@
 
     <link rel="stylesheet" href="./css/main.css"/>
     <script type="module" defer src="./js/main.js"></script>
+    <script type="text/javascript" defer src="./js/events.js"></script>
 
 </head>
 
 <body>
     <main>
-        <!-- // bio elements // -->
-        <div class="profile" id="profile">
+        <!-- // popup // -->
+        <div id="popup" class="inactive">
+            <div id="popupWrapper">
+                <div id="popupTitle" class="name">
 
-        </div>
-        <div class="name" id="name">
+                </div>
+                <div id="popupImg">
 
-        </div>
-        <div class="about" id="about">
+                </div>
+                <!-- // bug easter egg, shhhhhh :3 // -->
+                <video id="video" class="img" src="./assets/bug.webm" type="video/webm" loading="lazy"></video>
+                <audio id="audio" src="./assets/bug.mp3"></audio>
+                <!-- // -------------------------- // -->
+                <div id="popupText" class="about">
 
+                </div>
+            </div>
         </div>
-        <!-- // links // -->
-        <div class="links" id="links">
+        <!-- // main page content // -->
+        <div id="wrapper">
+            <!-- // bio elements // -->
+            <div class="profile" id="profile">
 
+            </div>
+            <div class="name" id="name">
+
+            </div>
+            <div class="about" id="about">
+
+            </div>
+            <!-- // links // -->
+            <div class="links" id="links">
+
+            </div>
         </div>
-        <!-- // audio easter egg, shhhhhh :3 // -->
-        <audio id="audio" src="./assets/bug.mp3"></audio>
-        <script type="text/javascript">
-            /* -- play a sound when a secret element is clicked -- */
-            function bug() {
-                let audio = document.getElementById("audio")
-                audio.play()
-            }
-        </script>
     </main>
 </body>
 </html>
