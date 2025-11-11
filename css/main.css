@@ -226,3 +226,7 @@ a {
     pointer-events: none;
     filter: blur(5px);
 }
+
+#video.inactive {
+    display: none;
+}
