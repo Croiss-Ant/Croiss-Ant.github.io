@@ -213,6 +213,7 @@ a {
     height: 425px;
     max-height: 50vw;
     margin-bottom: 2rem;
+    border-radius: 15px;
 }
 
 #popup.inactive {

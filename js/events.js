@@ -6,22 +6,26 @@ const popupText = document.getElementById("popupText")
 
 const bug = document.getElementById("bug")
 const audio = document.getElementById("audio")
+const video = document.getElementById("video")
 
-function popUp(header, text, image, link = null) {
+function popUp(header, text, image = null, link = null) {
     popupTitle.innerHTML = `<div>${header}</div>`
     popupText.innerHTML = `<div>${text}</div>`
-    popupImg.innerHTML = `<img class="img" src="${image}"></img>`
+    if (image) {
+        popupImg.innerHTML = `<img class="img" src="${image}"></img>`
+    }
     wrapper.classList.add("inactive")
     popup.classList.remove("inactive")
 }
 
 function playBug() {
     audio.play()
+    video.play()
 }
 
 bug.addEventListener("click", () => {
     if (popup.classList.contains("inactive")) {
-        popUp("Get stick bugged lol", "You found a secret, I guess ?", "https://media1.tenor.com/m/P-bmt667a_oAAAAd/stick-bug-stick-bugged.gif");
+        popUp("Get stick bugged lol", "You found a secret, I guess ?");
         playBug();
     }
 })
