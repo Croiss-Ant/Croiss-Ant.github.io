@@ -53,9 +53,9 @@ export const linksPro = [
 export const bioMain = {
     name: "L'Ant",
     about: `Adult | 🇫🇷 Fr*nch 🇫🇷 | Professional bug lover <span id="bug">🐛</span> | Likes to code and play games in my free time`,
-    image: "https://image2url.com/images/1761484172085-be4b7a67-34c0-4c2c-8c2d-98f752a84bb0.png",
+    image: "./assets/profile-icon.png",
     artistId: "@ArtLegionary",
-    artLink: "https://x.com/ArtLegionary/status/1875405062874526207/photo/1"
+    artLink: "https://twitter.com/@ArtLegionary/status/1875405062874526207"
 }
 
 export const bioPro = {
